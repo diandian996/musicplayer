@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my music</title>
+    <link rel="stylesheet" href="my.css">
+    <style media="screen"></style>
+  </head>
+  <body>
+    <audio id="id-audio-player">
+      <source src="music/我害怕--xx.mp3" data-list="0">
+    </audio>
+    <header>
+      <div class="music-logo">
+        <img src="img/logo.png" alt="图标">
+        <span id="my-id-audio-title">网易云音乐</span>
+        <div class="music-title">
+            <span class="one">发现音乐</span>
+            <span class="two">我的音乐</span>
+            <span class="thr">朋友</span>
+            <span class="fou">音乐人</span>
+        </div>
+        <div class="find">
+          <span class="parent">
+            <input type="text" class="txt" value="音乐/电台/用户" id="id-dudu" style="opacity:1; border:none">
+          </span>
+        </div>
+      </div>
+    </header>
+    <main class="my-main">
+      <article class="my-music-play">
+        <section class="my-music-left-aside">
+          <img class="my-img-gan" src="img/gan.png" alt="">
+          <div class="my-music-rotaor" id="id-music-rotaor">
+            <span class="my-cd-outside midXY">
+              <span class="my-rotate-cd midXY pic">
+                <span class="pic midXY" id="id-cd-cover">
+                </span>
+              </span>
+            </span>
+          </div>
+          <div class="my-music-name">
+            <span id="id-music-current">我害怕--xx</span>
+            <div class="my-music-function">
+              <span>喜欢</span>
+              <span>收藏</span>
+              <span>下载</span>
+              <span>分享</span>
+            </div>
+          </div>
+        </section>
+        <section class="my-music-right-aside">
+          <section class="my-music-contaniner">
+						<div class="my-music-list">
+							<span class="my-list-title">歌曲列表</span>
+						</div>
+						<div class="my-list-info">
+							<div class="my-list-info-blank">
+							</div>
+							<div class="my-list-info-name">
+								歌曲标题
+							</div>
+							<div class="my-list-info-time">
+								时长
+							</div>
+							<div class="my-list-info-singer">
+								歌手
+							</div>
+						</div>
+					</section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class='my-music-center'>
+				<section id="id-music-control">
+          <img id="id-img-pre" src="img/pre.png" alt="pre">
+          <img id="id-img-play" src="img/play.png" data-state="pause" alt="play">
+          <img id="id-img-next" src="img/next.png" alt="next">
+	      </section>
+	      <section id="my-id-music-vol-model">
+	         <img id='my-id-voice' src="img/volume.png" data-state='voice'>
+					 <section class="my-music-progress" data-volume='1'>
+						 <input class="my-progress" id="my-id-vol-progress" type="range" min=0 max=100 value=80.5 step="">
+					 </section>
+					   <img id="id-music-order" data-order="0" src="img/list.png">
+					 <section class='my-model-tip hide'>
+
+					 </section>
+	       </section>
+	       <section id="my-id-music-progress-bar">
+					 <section id="id-current-time">
+						00:00
+					 </section>
+					 <section id="id-duration">
+						00:00
+					 </section>
+					 <section id="id-progress">
+						<input  class="my-progress" id="my-id-music-progress" type="range" min=0 max=100 value=0 step="0.25">
+					 </section>
+	       </section>
+			</section>
+    </footer>
+    <script src="dudu.js"></script>
+		<script src="my.js"></script>
+  </body>
+</html>
+  
